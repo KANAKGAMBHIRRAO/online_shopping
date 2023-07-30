@@ -1,0 +1,321 @@
+/* Css Reset */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* css variable */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    top:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation bar -- Logo & Images */
+
+#logo{
+    margin: 3px -15px;
+}
+
+#logo img{
+    height:50px;
+    margin: 9px 51px;
+    border-radius: 50%;
+    border: 0.2px solid white;
+}
+
+/* Navigation bar -- List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.9999;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top:0px;
+    left: 0px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 1.3px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home-section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 573px;
+    /* height: 541px; */
+    
+    /* position: relative; */
+}
+
+#home::before{
+    content: "";
+    background:url(../images/tomato.jpg)no-repeat center center/cover;
+    opacity: 0.94;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top:0px;
+    left:0px;
+}
+
+#home h1{
+    color : white;
+    text-align: center;
+    font-size: 3.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Services section */
+
+.services-section .h-primary{
+    font-size: 2rem;
+    padding: 32px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services-section{
+    position: relative;
+    top:0px;
+}
+
+.services-section::before {
+    background: url(../images/eating_stuff.jpg);
+    content: "";
+    opacity: 0.67;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top:0px;
+    left:0px;
+}
+
+#services{
+    /* margin:34px; */
+    display: flex;
+    /* height:400px; */
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 45px;
+    margin: -25px 30px 0px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    background: #f5f1f1;
+}
+
+#services .box img{
+    height:80px;
+    display: block;
+    margin:auto;
+    border-radius: 100%;
+}
+
+#services p{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    color: brown;
+}
+
+/* client - section */
+
+#client-section{
+   position: relative;
+   top:0%;
+}
+
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section .h-primary{
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 45px;
+    /* padding: 12px; */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .client-item{
+    padding: 34px;
+} */
+
+.client-item img{
+    height:100px;
+    padding: 34px;
+}
+
+#client-section{
+    position: relative;
+    top:0px;
+}
+
+.apple img{
+    height: 90px;
+}
+
+.skype img{
+    height: 140px;
+    padding:34px 0px 34px;
+}
+
+.amazon img{
+    height: 180px;
+}
+
+.twitter img{
+    height:120px
+}
+
+.microsoft img{
+    height:70px;
+    border-radius: 40px;
+}
+
+#client-section::before{
+    background: url(../images/client.jpg)no-repeat center center/cover;
+    content: "";
+    opacity: 0.67;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top:0px;
+    left:0px;
+}
+
+/* Contact Us */
+
+#contact{
+    position: relative;
+    
+}
+
+#contact::before{
+    background: url(../images/symbol.jpg)no-repeat center center/cover;
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width:40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* footer */
+
+footer{
+    background: black;
+    color: white;
+    padding:9px 20px;
+}
+
+/* Utility Class */
+
+.h-primary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h-secondary{
+    font-size: 1.7rem;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border : 2px solid white;
+    background-color: rgb(62 40 40);
+    color: white;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+.btn:hover{
+    color: rgb(62 40 40);
+    background-color: white;
+    border:2px solid  rgb(62 40 40);
+}
+
+.center{
+    text-align: center;
+}
